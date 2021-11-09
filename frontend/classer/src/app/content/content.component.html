@@ -1,0 +1,8 @@
+<div>
+    <div *ngFor="let class of classes | async">
+        <div class="class" [style.padding-top.px]="class.duration * 20"
+            [style.padding-bottom.px]="class.duration * 20">
+            {{ class.name }}
+        </div>
+    </div>
+</div>
