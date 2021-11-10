@@ -1,3 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.is-mobile .toolbar {
+    position: fixed;
+    z-index: 2;
+}
+
+h1.app-name {
+    margin-left: 8px;
+}
+
+.sidenav-container {
+    flex: 1;
+}
+
+.is-mobile .sidenav-container {
+    flex: 1 0 auto;
+}
+
 .class {
     margin-bottom: 1px;
     padding: 10px;
@@ -6,21 +33,6 @@
     border-color: #e86161;
 }
 
-.spacer-3px {
-    width: 3px;
-}
-
-.nav-sidenav-content {
-    height: 100%;
-    margin-top: 65px;
-}
-
-.nav-sidenav {
-    padding: 20px;
-}
-
-.toolbar {
-    position: fixed;
-    z-index: 2;
-    height: 65px;
+.content {
+    margin: 5px;
 }
